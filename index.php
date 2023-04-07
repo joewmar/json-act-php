@@ -1,7 +1,7 @@
 <?php
     header('Access-Control-Allow-Origin: *');
-    $music = new stdClass();
-    $music->music = array(
+    $musics = new stdClass();
+    $musics->music = array(
         array(
             "lesson" => "History of Music",
             "outline" => array(
@@ -34,7 +34,7 @@
             ),
         ),
         array(
-            "lesson" => "ElementMusic", 
+            "lesson" => "Element Music", 
             "outline" => array(
                 "Melody" => array(
                     "ColorMelodies" => "Emotion Melodies",
@@ -48,7 +48,7 @@
             ),
         ),
         array(
-            "lesson" => "GenreMusic", 
+            "lesson" => "Music Genre", 
             "outline" => array(
                 "Pop" => array(
                     "Example" => "Uptown Funk by Mark Ronson feat Bruno Mars",
@@ -88,7 +88,7 @@
         ),
        
     );
-    $musicJSON = json_encode($music);
+    $musicJSON = json_encode($musics);
 
     echo $musicJSON;
 
